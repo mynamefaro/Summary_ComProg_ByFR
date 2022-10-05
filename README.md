@@ -3,6 +3,8 @@
 
 > เอกสารฉบับนี้เหมาะกับผู้มีความรู้เบื้องต้นในการเขียนโปรแกรมภาษา python แล้วเท่านั้น
 
+======
+
 ### Unit 1 Basic I/O, Data Types, Variables, Operators Expressions Statements
 
 ## Data Type
@@ -44,6 +46,8 @@ python มี operator มากมายหลากหลายการทำ
 * มีเพียงสตริงที่อยู่ในรูป "[1 , 2 , 3]" กล่าวคืออยู่ในรูปของ list อยู่แล้ว สามารถแปลงเป็น list ได้
 นอกเหนือจากการกระทำเหล่านี้อาจนำมาซึ่ง error ได้
 
+======
+
 ### Unit 2 String and List
 ## การเรียกใช้งาน index
 ขนาด N จำนวน สามารถเรียกใช้งาน index ตั้งแต่ -N ถึง N-1 เช่น
@@ -74,10 +78,14 @@ python มี operator มากมายหลากหลายการทำ
 ## built-in function เพิ่มเติม
 * len(arg) คืนค่าขนาดของลิสต์หรือสตริง arg
 
+======
+
 ### Unit 3 Selection Structure
 * if คือคำสั่ง if
 * else คือคำสั่ง else
 * elif คือคำสั่ง else if ใช้ในกรณีที่เป็นโครงสร้างหลายทางเลือก
+
+======
 
 ### Unit 4 Loop Structure
 ## คำสั่ง for
@@ -96,6 +104,8 @@ python มี operator มากมายหลากหลายการทำ
 ## คำสั่ง while 
 มาจาก while loop คล้ายภาษา c กล่าวคือจะทำซ้ำเรื่อยๆไม่มีกำหนดรอบชัดเจน ตราบที่เงื่อนไขยังเป็นจริง
 
+======
+
 ### Unit 5 List Processing
 จะกล่าวถึง List Processing เพิ่มเติมที่ไม่ได้กล่าวในบทถัดๆมาเท่านั้น
 
@@ -113,6 +123,8 @@ python มี operator มากมายหลากหลายการทำ
 ## List String method
 * .split(x) กล่าวไปแล้ว
 * x.joint(vars) เมื่อ x เป็นสตริงที่เป็นเครื่องหมายคั่นตอนใดๆ เช่น "," " " "\" "/" เป็นต้น และ vars คือ list ของสตริง ตัวอย่างเช่น `x = "\"` และ `vars = ["hello","rujji","555"]` `a = x.join(vars)` จะได้เป็น a คือ `"hello\rujji\555"`
+
+======
 
 ### Unit 6 Function
 
