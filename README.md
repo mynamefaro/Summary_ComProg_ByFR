@@ -3,12 +3,9 @@
 
 > เอกสารฉบับนี้เหมาะกับผู้มีความรู้เบื้องต้นในการเขียนโปรแกรมภาษา python แล้วเท่านั้น
 
-###Table of Content
- * [Unit 1](###Unit 1 Basic I/O, Data Types, Variables, Operators Expressions Statements)
+### Unit 1 Basic I/O, Data Types, Variables, Operators Expressions Statements
 
-###Unit 1 Basic I/O, Data Types, Variables, Operators Expressions Statements
-
-##Data Type
+## Data Type
 python มี Data Type พื้นฐาน 5 อย่าง
 * str สตริง
 * int จำนวนเต็ม
@@ -16,7 +13,7 @@ python มี Data Type พื้นฐาน 5 อย่าง
 * bool บูลีน (จริง หรือ เท็จ)
 * list เป็นชุดของข้อมูล เก็บเป็นลำดับ คล้ายกับ Array ข้อมูลภายใน list ไม่จำเป็นต้องเป็น type เดียวกัน
 
-##Operator 
+## Operator 
 python มี operator มากมายหลากหลายการทำงาน 
 * การบวก (+) : float + float = float, int + int = int, float + int = float,string + string = string (นำสตริงสองอันมาต่อกันตามลำดับ), list + list = list (นำข้อมูลจากสอง list มาต่อกัน เช่น `[1,2] + [3,4] == [1,2,3,4]`)
 * การลบ (-) : float - float = float, int - int = int, float - int = float
@@ -47,14 +44,16 @@ python มี operator มากมายหลากหลายการทำ
 * มีเพียงสตริงที่อยู่ในรูป "[1 , 2 , 3]" กล่าวคืออยู่ในรูปของ list อยู่แล้ว สามารถแปลงเป็น list ได้
 นอกเหนือจากการกระทำเหล่านี้อาจนำมาซึ่ง error ได้
 
-###Unit 2 String and List
-##การเรียกใช้งาน index
-ขนาด N จำนวน สามารถเรียกใช้งาน index ตั้งแต่ -N ถึง N-1
-`ex ['a' , 'b' , 'c' , 'd']`
-`[-4][-3][-2][-1]`
-`[0][1][2][3]`
+### Unit 2 String and List
+## การเรียกใช้งาน index
+ขนาด N จำนวน สามารถเรียกใช้งาน index ตั้งแต่ -N ถึง N-1 เช่น
+"""
+['a' , 'b' , 'c' , 'd']
+[-4][-3][-2][-1]
+[0][1][2][3]
+"""
 
-##slicing function
+## slicing function
 เป็นฟังก์ชันพิเศษ ที่ไม่จำเป็นต้องเขียนในรูปฟังก์ชัน แต่สามารถเขียนคล้ายกับ index ของ string หรือ list นั้นๆ เช่น x[2:3:5] เป็นต้น ผลลัพธ์ที่ได้ออกมาคือข้อมูล string หรือ ข้อมูลภายใน list ที่อยู่ในช่วง หรือ range ดังกล่าว
 > [start : stop : step]
 สามารถนำมาเขียนคล้าย for-loop ในภาษา c ได้ดังนี้
@@ -66,41 +65,41 @@ python มี operator มากมายหลากหลายการทำ
 * กรณีเขียนผิด หากเป็น loop จะทำให้เกิดลูปอนันต์ แต่ผลที่ได้จากการใช้ slicing function จะก่อให้เกิด list หรือ str ว่างแทน
 * จะไม่มีการ error เกิดขึ้น
 
-##method เพิ่มเติมของสตริง 
+## method เพิ่มเติมของสตริง 
 * .upper() คืนค่าสตริงที่ประกอบไปด้วยตัวอักษรพิมพ์ใหญ่หมด หากเป็นตัวอักษรพิมพ์เล็กหมดอยู่แล้วก็จะคืนค่าสตริงเดิม
 * .lower() คืนค่าสตริงที่ประกอบไปด้วยตัวอักษรพิมพ์เล็กหมด หากเป็นตัวอักษรพิมพ์เล็กหมดอยู่แล้วก็จะคืนค่าสตริงเดิม
 * .strip() คืนค่าสตริงที่ตัดช่องว่างหรือ space ด้านหน้าและหลังสตริง
 * .split(x) คืนค่าลิสต์ที่ประกอบไปด้วยสตริงที่ถูกตัดแบ่งโดยใช้ตัวอักษร x เป็นตัวแบ่ง ในกรณีที่ต้องการแบ่งโดยใช้ช่องว่าง หรือ space สามารถใช้ .split() ได้เลย
 
-##built-in function เพิ่มเติม
+## built-in function เพิ่มเติม
 * len(arg) คืนค่าขนาดของลิสต์หรือสตริง arg
 
-###Unit 3 Selection Structure
+### Unit 3 Selection Structure
 * if คือคำสั่ง if
 * else คือคำสั่ง else
 * elif คือคำสั่ง else if ใช้ในกรณีที่เป็นโครงสร้างหลายทางเลือก
 
-###Unit 4 Loop Structure
-##คำสั่ง for
+### Unit 4 Loop Structure
+## คำสั่ง for
 * มาจาก for-loop
 * มีอยู่ 2 แบบ
-#for i in range(start,stop,step)
+# for i in range(start,stop,step)
 สามารถนำมาเขียนคล้าย for-loop ในภาษา c ได้ดังนี้
 กรณีที่ step เป็นจำนวนเต็มบวก
 `for(int i = start;i < stop;i += step)`
 กรณีที่ step เป็นจำนวนเต็มลบ
 `for(int i = start;i > stop;i += step)`
 
-#for element in vars เมื่อ vars คือ str หรือ list
+# for element in vars เมื่อ vars คือ str หรือ list
 เป็นการ loop เพื่อดึงสมาชิกแต่ละตัวใน vars มาใช้งานภายใน loop
 
-##คำสั่ง while 
+## คำสั่ง while 
 มาจาก while loop คล้ายภาษา c กล่าวคือจะทำซ้ำเรื่อยๆไม่มีกำหนดรอบชัดเจน ตราบที่เงื่อนไขยังเป็นจริง
 
-###Unit 5 List Processing
+### Unit 5 List Processing
 จะกล่าวถึง List Processing เพิ่มเติมที่ไม่ได้กล่าวในบทถัดๆมาเท่านั้น
 
-##List method เพิ่มเติม
+## List method เพิ่มเติม
 * .append(x) นำ x มาเพิ่มลงใน list โดยต่อท้ายจากข้อมูลเดิม
 * .insert(index , x) แยกเป็น 2 กรณี ในกรณีที่ index เป็นจำนวนบวก จะเพิ่มข้อมูล x ที่ตำแหน่ง index นั้นๆ ส่วนข้อมูลเดิมที่ index นั้นๆและข้อมูลถัดๆจากนั้นก็จะถูกขยับไปทางขวามือตามลำดับ เช่น `x = [1,2,3]` `x.insert(1 , 4)` จะได้เป็น `[1,4,2,3]` ในกรณีที่ index เป็นจำนวนเต็มลบ จะเพิ่มข้อมูลที่ด้านซ้ายมือของข้อมูลที่อยู่ที่ index นั้นๆ ส่วนข้อมูลที่อยู่ทางด้านซ้ายมือและข้อมูลถัดๆไปทางซ้ายมือก็จะถูกขยับไปทางซ้ายมือตามลำดับ เช่น `x = [1,2,3]` `x.insert(-1 , 4)` จะได้เป็น `[1,2,4,3]`
 * .remove(x) จะนำข้อมูลภายใน list ที่มีค่าเป็น x ที่มีเลข index น้อยสุดออกจาก list ไป เช่น `x = [3,1,3,1,1]` `x.remove(1)` จะได้เป็น `[3,3,1,1]`
@@ -111,17 +110,17 @@ python มี operator มากมายหลากหลายการทำ
 * method ที่เป็นการนำข้อมูลออกจาก list หากไม่พบข้อมูลหรือ index ดังกล่าวภายใน list จะเกิด error
 * เมื่อเรียกใช้ method เหล่านี้ จะเกิดการเปลี่ยนแปลงภายในตัวแปรทันที ไม่ได้มีการคืนค่าข้อมูลแต่อย่างใด ฉะนั้นไม่จำเเป็นต้องนำตัวแปรใดมารับค่าที่ได้จากการคืนค่าของ method
 
-##List String method
+## List String method
 * .split(x) กล่าวไปแล้ว
 * x.joint(vars) เมื่อ x เป็นสตริงที่เป็นเครื่องหมายคั่นตอนใดๆ เช่น "," " " "\" "/" เป็นต้น และ vars คือ list ของสตริง ตัวอย่างเช่น `x = "\"` และ `vars = ["hello","rujji","555"]` `a = x.join(vars)` จะได้เป็น a คือ `"hello\rujji\555"`
 
-###Unit 6 Function
+### Unit 6 Function
 
-##built-in function ควรรู้
+## built-in function ควรรู้
 * abs(x) คืนค่า absolute ของ x
 * round(x , d) คืนค่า x ในรูปของทศนิยม d ตำแหน่ง
 
-##ฟังก์ชันจาก libraly math
+## ฟังก์ชันจาก libraly math
 `import math`
 ในที่นี้จะนำมาเฉพาะบางฟังก์ชันเท่านั้น
 * math.sqrt(x) คืนค่า square root ของ x
@@ -129,27 +128,32 @@ python มี operator มากมายหลากหลายการทำ
 * math.log10(x) คืนค่า logx
 * math.pow(x , y) คืนค่า x ยกกำลัง y
 
-##การสร้าง function
-`def function_name(parameter lists)`
-`   #statement`
-`   return value`
+## การสร้าง function
+"""
+def function_name(parameter lists)
+    #statement
+    return value
+"""
 
 * function_name หมายถึงชื่อฟังก์ชัน
 * parameter lists หมายถึง ชุดตัวแปรที่จะนำเข้าฟังก์ชัน เช่น a,b,c จะมีหลายตัวแปรหรือไม่มีซักตัวแปรเลยก็ได้
 * value หมายถึง ค่าที่ต้องการจะส่งออกจากฟังก์ชัน จะมีหรือไม่ก็ได้ หรือไม่จำเป็นต้อง Return ค่าเลยก็ได้ ก็จะเป็นการส่งกลับ None ไปให้ผู้ใช้งานแทน
 * การ return ค่าใน python สามารถ return ได้หลายค่า
 * ค่าตัวแปรที่เป็นการรับข้อมูลมาจากผู้ใช้งานมักเป็น pass by reference กล่าวคือ หากมีการแก้ไขอะไรภายในฟังก์ชัน ก็จะทำให้ตัวแปรนั้นๆเปลี่ยนแปลงตามไปด้วย เว้นแต่หากมีการ assign ค่าให้กับตัวแปร (ใช้ = ) จะทำให้ไม่เกิดการเปลี่ยนแปลงกับตัวแปรต้นฉบับ ดังตัวอย่างต่อไปนี้
-`def func(x)`
-`   x[2] = 4`
-`   `
-`y = [1,2,3]`
-`func(y) #y = [1,2,4]`
+"""
+def func(x)
+   x[2] = 4
+   
+y = [1,2,3]
+func(y) #y = [1,2,4]
+"""
 
-`def func(x)`
-`   x = [3 , 2 , 5] #มีการ assign ค่าใหม่ให้กับ x`
-`   `
-`y = [1,2,3]`
-`func(y) #y = [1,2,3] ดังเดิม`
+"""
+def func(x)
+  x = [3 , 2 , 5] #มีการ assign ค่าใหม่ให้กับ x
+y = [1,2,3]
+func(y) #y = [1,2,3] ดังเดิม
+"""
 
 
 
